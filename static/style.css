@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Raleway:ital@1&display=swap');
+body
+{
+    margin:0 auto;
+}
+.header
+{
+  height:250px;
+  width: 100%;
+  background-color: rgb(156,125,191);
+  text-align: center;
+  flex-direction: column;
+}
+.title
+{
+  height: 75px;
+  padding-top:25px;
+  font-size: 75px;
+  font-family: 'Oswald', sans-serif;
+}
+.subtitle
+{
+  padding-top: 40px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+#file-upload
+{
+  display:none;
+}
+#file
+{
+  display:none;
+}
+.btn
+{
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 10px;
+  font-size:30px;
+  height:50px;
+  border-radius: 15px;
+  background-color: rgb(156,125,191);
+  display: table;
+  text-align:center;
+  margin:30px;
+  width:300px;
+}
+.btn:hover
+{
+  color:rgb(156,125,191);
+  background-color:black;
+  cursor: pointer;
+}
+.btn-container
+{
+  width:100%;
+  height:120px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(211,211,211);
+}
+
+.tile
+{
+  height:100px;
+  width:20%;
+  margin:1%;
+  background-color:rgb(156,125,191);
+  border-radius: 25px;
+  float: left;
+  text-align: center;
+}
+
+.tile_active
+{
+  height:100px;
+  width:20%;
+  margin:1%;
+  background-color:black;
+  border-radius: 25px;
+  float: left;
+  text-align: center;
+  color:rgb(156,125,191);
+}
+
+.bar
+{
+  padding-top: 8px;
+  height: 50px;
+  text-align:center;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  font-size: 25px;
+}
+.tile_img
+{
+  height:200px;
+}
+.tile_content
+{
+  margin:auto;
+  display: inline-block;
+}
+.tile_content:hover
+{
+  cursor: pointer;
+}

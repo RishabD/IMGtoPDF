@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <meta charset="utf-8">
+    <title>IMGtoPDF</title>
+  </head>
+  <body>
+    <div class="header">
+        <div class="title">
+          IMG to PDF
+        </div>
+        <div class="subtitle">
+          A safe way to convert images to PDF's
+        </div>
+    </div>
+
+    <form  id="file-upload" enctype="multipart/form-data" action = '/convert' method="post">
+      <input multiple id = "file" name = "file[]" type="file" accept="image/png, image/jpeg"/>
+    </form>
+
+
+    <div class="btn-container">
+      <p id = "upload-btn" class = "btn">Upload Image</p>
+      <p id = "convert" class = "btn">Convert to PDF</p>
+    </div>
+
+    <div id="filenames">
+
+    </div>
+
+
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src = "{{url_for('static',filename = 'script.js')}}"></script>
