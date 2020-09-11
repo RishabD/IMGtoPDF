@@ -1,6 +1,6 @@
 import io
 import uuid
-from flask import Flask, render_template, url_for, request, session, send_file
+from flask import Flask, render_template, url_for, request, send_file
 from datetime import timedelta
 from PIL import Image
 
@@ -30,7 +30,6 @@ def convert():
          imagelist.append(Image.open(binary_data[i]).convert('RGB'))
       img.save(output,format = "PDF",save_all=True, append_images=imagelist)
       output.seek(0)
-      session.clear()
       return send_file(output, mimetype='application/pdf', as_attachment=True, attachment_filename='download.pdf')
 
 
